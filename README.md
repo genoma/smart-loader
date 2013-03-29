@@ -1,5 +1,6 @@
-smart-loader
-============
+# SmartLoader Plugin for jQuery 1.9.X / 2.0.X
+
+This plugin provides a way to show the whole content of the page   only when all images are loaded, or alternatively shows an animated gif image, until the image is fully loaded.
 
 ## Beta 1
 
