@@ -95,31 +95,59 @@ textarea {
 
 
 body {
-  padding: 50px;
-  background: #f3f3f3
+  background: #410101;
+  height: 100%;
+  color: #f8f8f8;
+  font-family: 'Exo', sans-serif;
+  font-weight: 100;
+}
+
+html {
+  height: 100%;
+}
+
+#header {
+  text-align: center;
+  background: url(../img/background.png);
+  width: 100%;
 }
 
 h3 {
   margin-top: -25px;
-  color: #396bb3;
+  color: #ffff9d;
 }
 
-h1 {
-  color: #d72020;
+h1, h2 {
+  color: #ffff9d;
 }
 
 .blockTitle {
-  background: #fff;
-  border: 1px solid #fff;
-  border-radius: 6px;
-  box-shadow: 0 0 5px #c8c8c8;
+  width: 900px;
+  height: 100%;
+  margin: 0 auto;
+  background: #000;
+  border-left: 1px solid #510000;
+  border-right: 1px solid #510000;
+  box-shadow: 0 0 5px #000;
   padding: 20px;
 }
 
+hr {
+  border-top: 1px solid #6a0000;
+}
 
-
-
-
+footer {
+  width: 940px;
+  margin: 0 auto;
+  background: #0f0000;
+  height: 50px;
+  border-left: 1px solid #510000;
+  border-right: 1px solid #510000;
+  margin-top: -50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 12px;
+}
 
 
 
