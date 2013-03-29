@@ -64,8 +64,6 @@
         image.src = imgSource[0];
       }
 
-
-
       function theDocFunction(controlFunct) {
         console.log('loop');
         console.log(theImageNumber);
@@ -78,8 +76,6 @@
           options.callback.call(checkThis);
         }
       }
-
-
 
       if (options.theControl === 'document') {
         $this.each(function () {
@@ -96,22 +92,6 @@
           theDocFunction(control);
         }, options.lengthOfLoop);
       }
-
-
-      /* TODO: Refactoring */
-//      var controlFunct = setInterval(function () {
-//        var diff = (new Date()).getTime() - start;
-//        if ((imgOk !== theImageNumber) && (diff < options.howManySeconds)) {
-//          imgMissing = 0;
-//        } else if ((imgOk !== theImageNumber) && (diff >= options.howManySeconds)) {
-//          clearInterval(controlFunct);
-//          options.errorCallback.call(this);
-//        } else {
-//          clearInterval(controlFunct);
-//          options.callback.call(this);
-//        }
-//
-//      }, options.lengthOfLoop);
 
 
     });
