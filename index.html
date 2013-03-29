@@ -9,6 +9,7 @@
     <title>Wait For Images</title>
     <meta name="description" content="">
     <link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,600,700' rel='stylesheet' type='text/css'>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?&skin=sons-of-obsidian"></script>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -34,7 +35,78 @@
       Its use is pretty easy and the main.js file should be self explanatory.</p>
       <p>This plugin is still in an early stage of its development, but it should be fully functional at last with any <b>modern</b> major browser.</p>
 
-  </div>
+      <h2>Instructions</h2>
+      <p>First thing first: this plugin gives you two callback, as you can see in the code below, di per se it doesn't do anything incredible, it just calls the correct callback.
+      The <em>errorCallback</em> is called if one or more images cannot be loaded in the given amount of time (it should be a console.log alert, because this callback is usually fired if there is an error within the html code itself - wrong src for example - or a very slow connection and large images).
+      </p>
+
+      <p>The most important options are the timers, <em>howManySeconds</em> and <em>lenghtOfLoop</em>, both should be tweaked accordingly with the number of images and their size.</p>
+
+      <h4>javascript code</h4>
+
+      <pre class="prettyprint">
+        // call the function the usual way
+        $(function () {
+          // call the plugin
+          $(document).smartLoader({
+            // main control option can be **document** or **images**
+            // the first check the whole document and than calls the callback,
+            // the second does the same but place into every image that is waiting to be
+            // fully loaded an animated gif
+            theControl: 'document',
+            // **howManySeconds** is the maximum time you want to wait for
+            // images to be fully loaded expressed in milliseconds.
+            // After this amount of time the function throws the **errorCallback**
+            howManySeconds: 5000,
+            // **lengthOfLoop** this is the time delay between every single check loop,
+            // expressed in milliseconds, should be no less than 200.
+            lengthOfLoop: 200,
+            // the callback in case any image is successfully loaded
+            callback: function () {
+              $('#img-wrapper').fadeOut(1000);
+              console.log('this is the callback');
+            },
+            // the callback in case there was one or more images
+            // that failed to load in the prefixed amount of time
+            errorCallback: function () {
+              $('#img-wrapper').fadeOut(1000);
+              console.log('missing images');
+            }
+          });
+        });
+
+      </pre>
+
+      <h4>DOCUMENT mode</h4>
+
+      <pre class="prettyprint">
+        $(function () {
+          $(document).smartLoader({
+            theControl: 'document',
+      </pre>
+
+      <p><em>theControl</em> option is arguably the most important of the current set, in document mode you just need to put a couple of HTML lines after the <em>body</em> and you're done.</p>
+      <p>Look at the source of this web page and you'll find a div <strong>"class img-wrapper"</strong> wich is nothing but a dimmer.</p>
+
+      <pre class="prettyprint lang-css">
+        #img-wrapper {
+          display : block;
+          position : fixed;
+          height : 100%;
+          width : 100%;
+          top : 0;
+          left : 0;
+          z-index : 200000;
+          text-align: center;
+          padding-top: 30%;
+          background: #fff;
+          box-shadow: inset 0 0 15px #767676;
+        }
+      </pre>
+
+      <h4>HTML Code (for 'document' mode only)</h4>
+
+    </div>
 
   <footer>
     &copy; 2013 Alessandro Vioni Coding &amp; Marco Temperilli Graphics

@@ -117,19 +117,31 @@ h3 {
   color: #ffff9d;
 }
 
+h4 {
+  font-size: 20px;
+  color: #fff;
+  background: #00e3da;
+  text-decoration: underline;
+  padding: 5px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-shadow: 0 1px 1px #000;
+}
+
 h1, h2 {
   color: #ffff9d;
 }
 
 .blockTitle {
   width: 900px;
-  height: 100%;
+  min-height: 100%;
   margin: 0 auto;
   background: #000;
   border-left: 1px solid #510000;
   border-right: 1px solid #510000;
   box-shadow: 0 0 5px #000;
   padding: 20px;
+  padding-bottom: 50px;
 }
 
 hr {
