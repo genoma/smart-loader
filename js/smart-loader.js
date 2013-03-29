@@ -65,37 +65,39 @@
       }
 
 
-            
+
       function theDocFunction(controlFunct) {
+        console.log('loop');
+        console.log(theImageNumber);
         var diff = (new Date()).getTime() - start;
         if ((imgOk !== theImageNumber) && (diff >= options.howManySeconds)) {
           clearInterval(controlFunct);
           options.errorCallback.call(checkThis);
-        } else if ((imgOk === theImageNumber) && (diff >= options.howManySeconds)) {
+        } else if (imgOk === theImageNumber) {
           clearInterval(controlFunct);
           options.callback.call(checkThis);
         }
       }
 
-      
-      
+
+
       if (options.theControl === 'document') {
         $this.each(function () {
           checkTheLoad($(this));
         });
         control = setInterval(function () {
           theDocFunction(control);
-        });
+        }, options.lengthOfLoop);
       } else if (options.theControl === 'images') {
         $this.each(function () {
           checkTheImage($(this));
         });
         control = setInterval(function () {
           theDocFunction(control);
-        });
+        }, options.lengthOfLoop);
       }
-            
-      
+
+
       /* TODO: Refactoring */
 //      var controlFunct = setInterval(function () {
 //        var diff = (new Date()).getTime() - start;
