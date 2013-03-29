@@ -6,7 +6,7 @@ At this moment SmartLoader is still in a beta release quality and still needs so
 
 ## Instructions
 
-This plugin is still in an alpha stage, but you can clone the beta branch to get it working on your website.
+This plugin is still in a beta release quality, but you can clone the beta branch to get it working on your website.
 
 The "main.js" file contains a brief explanation of all the possible configurations and it should be pretty easy to use for anyone with a basic experience in Javascript and jQuery.
 
