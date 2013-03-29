@@ -52,7 +52,7 @@
         $theImageFade.attr('src', 'smart-loader-loaders/white.png');
 
         $theImageFade.css({
-          'background': 'url(smart-loader-loaders/SmartLoader60.gif)',
+          'background': 'url(smart-loader-loaders/SmartLoader30.gif)',
           'background-repeat': 'no-repeat',
           'background-position': 'center center'
         });
