@@ -1,15 +1,25 @@
 # SmartLoader Plugin for jQuery 1.9.X / 2.0.X
 
-This plugin provides a way to show the whole content of the page   only when all images are loaded, or alternatively shows an animated gif image, until the image is fully loaded.
+This plugin provides a way to show the whole content of the page   only when all images are loaded, or alternatively shows a loader image until the image is fully loaded.
 
-## Beta 1
+At this moment SmartLoader is still in a beta release quality and still needs some work and tests to be fully functional, but feel free to try it and to report here any problems you've encountered.
 
-This plugin is still in beta development quality, clone the betaX branch to find the latest beta available version.
+## Instructions
+
+This plugin is still in an alpha stage, but you can clone the beta branch to get it working on your website.
+
+The "main.js" file contains a brief explanation of all the possible configurations and it should be pretty easy to use for anyone with a basic experience in Javascript and jQuery.
+
+## TODO
+1. Instructions
+2. Marco's loaders
+3. HTML Demo
+4. Check IE compatibility
 
 ## LICENSE
 
 ### Copyright © 2013 Alessandro Vioni - @jenoma
-### Images © 2013 Marco Temperilli
+### Graphic © 2013 Marco Temperilli
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
