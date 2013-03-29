@@ -7,7 +7,7 @@ At this moment SmartLoader is still in a beta release quality and still needs so
 ## Instructions
 
 ## TODO
-1. Instruction
+1. Instructions
 2. Marco's Images
 3. HTML Demo
 4. Check IE compatibility
