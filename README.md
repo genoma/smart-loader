@@ -6,6 +6,12 @@ At this moment SmartLoader is still in a beta release quality and still needs so
 
 ## Instructions
 
+## TODO
+1. Instruction
+2. Marco's Images
+3. HTML Demo
+4. Check IE compatibility
+
 ## LICENSE
 
 ### Copyright © 2013 Alessandro Vioni - @jenoma
