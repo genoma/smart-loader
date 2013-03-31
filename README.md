@@ -17,7 +17,7 @@ Read carefully index.html with your browser of choice.
 3. HTML Demo
 4. Check IE compatibility
 
-## LICENSE
+## MIT LICENSE
 
 ### Copyright © 2013 Alessandro Vioni - @jenoma
 ### Graphic © 2013 Marco Temperilli
