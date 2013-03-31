@@ -1,0 +1,18 @@
+/* Dimmer css: this code is here just to give you an hint on how to develop your
+ * callback function with a dimmer that hides the whole page, with a loader, until
+ * all images are loaded.
+*/
+
+#smart-dimmer {
+  display : block;
+  position : fixed;
+  height : 100%;
+  width : 100%;
+  top : 0;
+  left : 0;
+  z-index : 200000;
+  text-align: center;
+  padding-top: 30%;
+  background: #fff;
+  box-shadow: inset 0 0 15px #767676;
+}
