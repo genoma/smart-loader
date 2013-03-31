@@ -161,7 +161,10 @@ footer {
   font-size: 12px;
 }
 
-
+em {
+  text-decoration: underline;
+  -moz-text-decoration-color: #f00;
+}
 
 
 

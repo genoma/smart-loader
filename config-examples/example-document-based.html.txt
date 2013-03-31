@@ -1,0 +1,7 @@
+<!--  this is the loader copy and place it after the <body> tag  -->
+<div id="your-dimmer">
+  <!-- loader image -->
+  <!-- Chose one of the images provided in the "smart-loader-loaders" folder  -->
+  <img src="smart-loader-loaders/SmartLoader30.gif">
+</div>
+<!--  this is the loader END  -->
