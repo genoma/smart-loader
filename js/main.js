@@ -18,13 +18,13 @@ $(function () {
     lengthOfLoop: 200,
     // the callback in case any image is successfully loaded
     callback: function () {
-      $('#img-wrapper').fadeOut(1000);
+      $('#smart-dimmer').fadeOut(1000);
       console.log('this is the callback');
     },
     // the callback in case there was one or more images
     // that failed to load in the prefixed amount of time
     errorCallback: function () {
-      $('#img-wrapper').fadeOut(1000);
+      $('#smart-dimmer').fadeOut(1000);
       console.log('missing images');
     }
   });
