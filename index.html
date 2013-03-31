@@ -19,7 +19,7 @@
   <body>
 
     <!--  this is the loader  -->
-    <div id="img-wrapper">
+    <div id="smart-dimmer">
       <!-- loader image -->
       <img src="smart-loader-loaders/SmartLoader30.gif">
     </div>
@@ -90,9 +90,9 @@
 
       <p><em>theControl</em> option is arguably the most important of the current options set, in document mode you just need to put a couple of HTML lines after the <em>body</em> tag and you're done.</p>
       <p>Look at the source of this web page and you'll find a div <strong>"class img-wrapper"</strong> wich is nothing but a dimmer.</p>
-      
+
       <p>This is the CSS code found in the smart-loader.css file.</p>
-      
+
       <pre class="prettyprint lang-css">
         #img-wrapper {
           display : block;
@@ -110,21 +110,21 @@
       </pre>
 
       <h4>IMAGES mode</h4>
-      
+
       <pre class="prettyprint">
         $(function () {
           $(document).smartLoader({
             theControl: 'images'
         });
       </pre>
-      
-      <p>The easiest mode, you just need the plugin <em>smart-loader-loaders</em> folder inside your website root, and that's it.</p>  
-    
+
+      <p>The easiest mode, you just need the plugin <em>smart-loader-loaders</em> folder inside your website root, and that's it.</p>
+
       <h4>Still needs help?</h4>
       <p>Drop me a line or two on Twitter @jenoma, i'll be glad to contact you back for any further assistance.</p>
 
     </div>
-    
+
   <footer>
     &copy; 2013 Alessandro Vioni Coding &amp; Marco Temperilli Graphics
   </footer>
