@@ -97,9 +97,10 @@ textarea {
 body {
   background: #410101;
   height: 100%;
-  color: #f8f8f8;
-  font-family: 'Exo', sans-serif;
+  color: #d6d6d6;
+  font-family: 'Verdana', sans-serif;
   font-weight: 100;
+  font-size: 14px;
 }
 
 html {
@@ -136,7 +137,7 @@ h1, h2 {
   width: 900px;
   min-height: 100%;
   margin: 0 auto;
-  background: #000;
+  background: #040404;
   border-left: 1px solid #510000;
   border-right: 1px solid #510000;
   box-shadow: 0 0 5px #000;
@@ -163,25 +164,28 @@ footer {
 
 em {
   text-decoration: underline;
-  -moz-text-decoration-color: #f00;
 }
 
 #download {
   height: 20px;
   line-height: 20px;
   margin-top: 15px;
+  color:#f90000;
 }
 
 #download a {
-  color: #fff;
+  color: #f90000;
   font-weight: 900;
   letter-spacing: 1px;
   font-size: 20px;
 }
 
 #download a:hover {
-  color: #f00;
-  text-decoration: overline;
+  color: #510000;
+}
+
+pre.prettyprint, code.prettyprint {
+ background: #040404;
 }
 
 /* ==========================================================================
