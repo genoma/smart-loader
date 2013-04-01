@@ -40,6 +40,8 @@ $(function () {
 
 ### Document mode
 
+Place this line of code in your main js file.
+
 ```javascript
 
 $(function () {
@@ -59,6 +61,8 @@ $(function () {
 });
 ```
 
+This is the HTML for a basic dimmer that hides the webpage content until all the images are succesfully loaded.
+
 ```html
 
 <!--  this is the loader copy and place it after the <body> tag  -->
@@ -69,6 +73,8 @@ $(function () {
 </div>
 <!--  this is the loader END  -->
 ```
+
+The css for the dimmer.
 
 ```css
 
@@ -89,6 +95,8 @@ $(function () {
 
 ### Images mode
 
+In this mode the plugin doesn't need further configuration, provided you've placed all the files and folders in the right place.
+
 ```javascript
 
 $(function () {
@@ -106,11 +114,16 @@ $(function () {
 });
 ```
 
+## smart-loader-loaders folder
+
+Marco Temperilli has designed a couple of nice loader, with different dimensions and in future we are going to give you even more choices, and
+options. This folder has to be placed in your website root.
+
 
 ## Assistance?
 
-Just drop a line to @jenoma on Twitter and i will more than happy to help you whith any problem youv've found, or you can contact me
-on App.net - @genoma
+Just drop a line to @jenoma on Twitter (or @genoma on ADN) and i will be more than happy to help you with any problem you've encountered with this
+plugin.
 
 ## MIT LICENSE
 
