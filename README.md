@@ -36,8 +36,43 @@ $(function () {
     }
   });
 });
-
 ```
+
+### Document mode
+
+```javascript
+
+theControl: 'document',
+```
+
+```html
+
+<!--  this is the loader copy and place it after the <body> tag  -->
+<div id="your-dimmer">
+  <!-- loader image -->
+  <!-- Chose one of the images provided in the "smart-loader-loaders" folder  -->
+  <img src="smart-loader-loaders/SmartLoader30.gif">
+</div>
+<!--  this is the loader END  -->
+```
+
+```css
+
+#your-dimmer {
+  display : block;
+  position : fixed;
+  height : 100%;
+  width : 100%;
+  top : 0;
+  left : 0;
+  z-index : 200000;
+  text-align: center;
+  padding-top: 30%;
+  background: #fff;
+  box-shadow: inset 0 0 15px #767676;
+}
+```
+
 
 
 ## Assistance?
