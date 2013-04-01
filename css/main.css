@@ -186,6 +186,7 @@ em {
 
 pre.prettyprint, code.prettyprint {
  background: #040404;
+ font-size: 13px;
 }
 
 /* ==========================================================================
