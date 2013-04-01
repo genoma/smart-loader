@@ -42,7 +42,21 @@ $(function () {
 
 ```javascript
 
-theControl: 'document',
+$(function () {
+  $(document).smartLoader({
+    theControl: 'document',
+    howManySeconds: 5000,
+    lengthOfLoop: 200,
+    callback: function () {
+      $('#your-dimmer').fadeOut(1000);
+      console.log('this is the callback');
+    },
+    errorCallback: function () {
+      $('#your-dimmer').fadeOut(1000);
+      console.log('missing images');
+    }
+  });
+});
 ```
 
 ```html
@@ -73,6 +87,24 @@ theControl: 'document',
 }
 ```
 
+### Images mode
+
+```javascript
+
+$(function () {
+  $(document).smartLoader({
+    theControl: 'images',
+    howManySeconds: 5000,
+    lengthOfLoop: 200,
+    callback: function () {
+      console.log('this is the callback');
+    },
+    errorCallback: function () {
+      console.log('missing images');
+    }
+  });
+});
+```
 
 
 ## Assistance?
